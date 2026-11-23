@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #bcdcf5, #8fc1e8);
+  color: #0b2a5b;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.logo {
+  font-size: 36px;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 40px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+.search-box button {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Main card */
+.main-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
+  padding: 30px 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.big-icon {
+  font-size: 90px;
+}
+
+.temp {
+  font-size: 72px;
+  font-weight: 800;
+  margin: 5px 0;
+}
+
+.city {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.desc {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #3b4d6b;
+}
+
+/* Detail tiles */
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.tile {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+  padding: 14px 4px;
+  font-size: 13px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tile .ti {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.tile span {
+  display: block;
+}
+
+.tile b {
+  display: block;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+@media (max-width: 400px) {
+  .details { grid-template-columns: repeat(2, 1fr); }
+  .temp { font-size: 58px; }
+}
